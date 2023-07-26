@@ -1,0 +1,181 @@
+define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/BIAT/qualtrics/qbiat6.js'], function(APIConstructor, iatExtension){
+ var API = new APIConstructor();
+
+	
+	return iatExtension({
+		practiceCategory1 : 
+			{
+				name : 'Mammals', //Will appear in the data.
+				title : {
+					media : {word : 'Mammals'}, //Name of the category presented in the task.
+					css : {color:'#31b404','font-size':'1.8em'}, //Style of the category title.
+					height : 4, //Height (because we need to know where to put the next item in the title)
+					startStimulus : { 
+					//If you're using a startStimulus, set here. If not, set the parameter showStimuliWithInst to false (see later below)
+						media : {word : 'Dogs, Horses, Cows, Lions'}, 
+						css : {color:'#31b404','font-size':'1em'}, 
+						height : 2
+					}
+				}, 
+				stimulusMedia : [ //Stimuli content as PIP's media objects
+					{word : 'Dogs'}, 
+					{word : 'Horses'}, 
+					{word : 'Lions'}, 
+					{word : 'Cows'}
+				], 
+				//Stimulus css (style of the stimuli)
+				stimulusCss : {color:'#31b404','font-size':'2em'}
+			},	
+			practiceCategory2 : 
+			{
+				name : 'Birds', 
+				title : {
+					media : {word : 'Birds'}, 
+					css : {color:'#31b404','font-size':'1.8em'}, 
+					height : 4,
+					startStimulus : {
+						media : {word : 'Pigeons, Swans, Crows, Ravens'}, 
+						css : {color:'#31b404','font-size':'1em'}, 
+						height : 2
+					}
+				}, 
+				stimulusMedia : [ //Stimuli content as PIP's media objects
+					{word : 'Pigeons'}, 
+					{word : 'Swans'}, 
+					{word : 'Crows'}, 
+					{word : 'Ravens'}
+				], 
+				//Stimulus css
+				stimulusCss : {color:'#31b404','font-size':'2em'}
+			},
+			categories : [  //As many categories you need.
+				{
+					name : 'Republican', //Will appear in the data.
+					title : {
+						media : {word : 'Republican'}, //Name of the category presented in the task.
+						css : {color:'#31b404','font-size':'1.8em'}, //Style of the category title.
+						height : 4, //Height (because we need to know where to put the next item in the title)
+						startStimulus : {
+							media : {word : 'Republican, Donald Trump, right wing, conservative'},
+							css : {color:'#31b404','font-size':'1em'}, 
+							height : 13
+						}
+					}, 
+					stimulusMedia : [ //Stimuli content as PIP's media objects
+					{word : 'Republican'}, 
+        	{word : 'Donald Trump'}, 
+        	{word : 'right wing'},
+					{word : 'conservative'}
+					], 
+					//Stimulus css (style of the stimuli)
+					stimulusCss : {color:'#31b404','font-size':'2em'}
+				},	
+				{
+					name : 'Democract', 
+					title : {
+						media : {word : 'Democrat'}, 
+						css : {color:'#31b404','font-size':'1.8em'}, 
+						height : 4,
+						startStimulus : {
+							media : {word : 'Democrat, Joe Biden, left wing, liberal'},  
+							css : {color:'#31b404','font-size':'1em'}, 
+							height : 13
+						}
+					}, 
+					stimulusMedia : [ //Stimuli content as PIP's media objects
+					{word : 'Democrat'}, 
+        	{word : 'Joe Biden'}, 
+        	{word : 'left wing'},
+					{word : 'liberal'}
+        				], 
+					//Stimulus css
+					stimulusCss : {color:'#31b404','font-size':'2em'}
+				}
+			],
+      attribute1 : 
+			{
+				name : 'Good', 
+				title : {
+					media : {word : 'Good'}, 
+					css : {color:'#0000FF','font-size':'1.8em'}, 
+					height : 4,
+					startStimulus : {
+						media : {word : 'Terrific, Lovely, Happy, Fantastic, Pleasure, Beautiful'}, 
+						css : {color:'#0000FF','font-size':'1em'}, 
+						height : 2
+					}
+				}, 
+				stimulusMedia : [ //Stimuli content as PIP's media objects
+					{word : 'Terrific'}, 
+					{word : 'Lovely'}, 
+					{word : 'Happy'}, 
+					{word : 'Fantastic'},
+					{word : 'Pleasure'},
+					{word : 'Beautiful'},
+					], 
+				//Stimulus css
+				stimulusCss : {color:'#0000FF','font-size':'2em'}
+			},	
+			attribute2 : 
+			{
+				name : 'Bad', 
+				title : {
+					media : {word : 'Bad'}, 
+					css : {color:'#0000FF','font-size':'1.8em'}, 
+					height : 4,
+					startStimulus : {
+						media : {word : 'Selfish, Hate, Humiliate, Tragic, Disgust, Awful'}, 
+						css : {color:'#0000FF','font-size':'1em'}, 
+						height : 2
+					}
+				}, 
+				stimulusMedia : [ //Stimuli content as PIP's media objects
+					{word : 'Selfish'}, 
+					{word : 'Hate'}, 
+					{word : 'Humiliate'}, 
+					{word : 'Tragic'},
+					{word : 'Disgust'},
+					{word : 'Awful'},
+					], 
+				//Stimulus css
+				stimulusCss : {color:'#0000FF','font-size':'2em'} 
+			},
+			base_url : {//Where are your images at?
+			image : 'https://satchmo496.github.io/images/'
+			},
+      //practiceTrials are a few trials at the beginning of the task (Sriram & Greenwald recommend 2 trials for each category).
+			practiceTrials : //Set number of trials per group in the practice trials at the beginning of the task
+			{//Can set 0 to all to remove the practice trials.
+				nFocalCat : 2, //Number of trials for the focal category.
+				nNonFocalCats : 2, //Number of trials for each non-focal category.  (in a mini block).
+				nFocalAtt : 2, //Number of trials for the focal attribute (in a mini block).
+				nNonFocalAtt : 2 //Number of trials for the non-focal attribute (in a mini-block). 
+			},
+      
+      //Sets whether we use a certain focal attribute throughout the task, or both.
+			focalAttribute : 'both', // Accepts 'attribute1', 'attribute2' or 'both', 
+			
+			//focalCategoryOrder can be: 'bySequence', 'random'.
+			//If bySequence then we always start with categories[0] as the first focal category.
+			focalCategoryOrder : 'random', 
+      
+      //Sets what attribute appears first. Irrelevant if focalAttributes is not 'both'. 
+			firstFocalAttribute : 'random', //Accepts 'attribute1', 'attribute2' or 'random'. 
+      
+      //Whether to start with a practice block.
+			practiceBlock : false, 
+			nPracticeBlockTrials : 8, //Should be at least 8 trials.
+			
+	//Whether to switch the focal attribute only once in the task (after all the blocks with the first focal attribute), 
+	//Or after every exhaustion of all the category-attribute combinations (e.g., twice if nCategoryAttributeBlocks).
+	//Relevant only when nCategoryAttributeBlocks>1, 
+	//and only if there is more than one focal attribute.
+			switchFocalAttributeOnce : true, 
+
+			//Number of blocks per focal category-attribute combination.
+			nCategoryAttributeBlocks : 2, 
+			
+			showStimuliWithInst : true,
+
+	});
+});
