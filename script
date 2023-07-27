@@ -58,7 +58,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/BIAT/qual
 						startStimulus : {
 							media : {word : 'Republican, Donald Trump, right wing, conservative'},
 							css : {color:'#31b404','font-size':'1em'}, 
-							height : 13
+							height : 5
 						}
 					}, 
 					stimulusMedia : [ //Stimuli content as PIP's media objects
@@ -79,7 +79,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/BIAT/qual
 						startStimulus : {
 							media : {word : 'Democrat, Joe Biden, left wing, liberal'},  
 							css : {color:'#31b404','font-size':'1em'}, 
-							height : 13
+							height : 5
 						}
 					}, 
 					stimulusMedia : [ //Stimuli content as PIP's media objects
