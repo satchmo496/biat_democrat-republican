@@ -113,6 +113,8 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/BIAT/qual
 					{word : 'Enjoy'}, 
 					{word : 'Friend'},
 					{word : 'Happy'},
+					{word : 'Delightful'},
+					{word : 'Triumph'},
 					{word : 'Pleasing'}					
 					], 
 				//Stimulus css
@@ -137,6 +139,8 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/BIAT/qual
 					{word : 'Gross'}, 
 					{word : 'Hatred'},
 					{word : 'Rotten'},
+					{word : 'Bothersome'},
+					{word : 'Hurtful'},			
 					{word : 'Sadness'}
 					], 
 				//Stimulus css
