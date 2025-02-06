@@ -50,7 +50,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/BIAT/qual
 			},
 			categories : [  //As many categories you need.
 				{
-					name : 'Republican', //Will appear in the data.
+					name : 'Republicans', //Will appear in the data.
 					title : {
 						media : {word : 'Republican'}, //Name of the category presented in the task.
 						css : {color:'#31b404','font-size':'1.8em'}, //Style of the category title.
@@ -72,7 +72,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/BIAT/qual
 					stimulusCss : {color:'#31b404','font-size':'2em'}
 				},	
 				{
-					name : 'Democrat', 
+					name : 'Democrats', 
 					title : {
 						media : {word : 'Democrat'}, 
 						css : {color:'#31b404','font-size':'1.8em'}, 
