@@ -176,7 +176,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/BIAT/qual
 	//Or after every exhaustion of all the category-attribute combinations (e.g., twice if nCategoryAttributeBlocks).
 	//Relevant only when nCategoryAttributeBlocks>1, 
 	//and only if there is more than one focal attribute.
-			switchFocalAttributeOnce : , 
+			switchFocalAttributeOnce : true, 
 
 			//Number of blocks per focal category-attribute combination.
 			nCategoryAttributeBlocks : 2, 
