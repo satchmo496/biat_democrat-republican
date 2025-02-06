@@ -56,7 +56,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/BIAT/qual
 						css : {color:'#31b404','font-size':'1.8em'}, //Style of the category title.
 						height : 4, //Height (because we need to know where to put the next item in the title)
 						startStimulus : {
-							media : {word : 'Republican, Donald Trump, right wing, conservative'},
+							media : {word : 'Conservative, Right Wing, Donald Trump, J.D. Vance, Republican'},
 							css : {color:'#31b404','font-size':'1em'}, 
 							height : 5
 						}
@@ -78,7 +78,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/BIAT/qual
 						css : {color:'#31b404','font-size':'1.8em'}, 
 						height : 4,
 						startStimulus : {
-							media : {word : 'Democrat, Joe Biden, left wing, liberal'},  
+							media : {word : 'Liberal, Left Wing, Joe Biden, Democrat, Kamala Harris'},  
 							css : {color:'#31b404','font-size':'1em'}, 
 							height : 5
 						}
@@ -102,7 +102,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/BIAT/qual
 					css : {color:'#0000FF','font-size':'1.8em'}, 
 					height : 4,
 					startStimulus : {
-						media : {word : 'Terrific, Lovely, Happy, Fantastic, Pleasure, Beautiful'}, 
+						media : {word : 'Appealing, Attractive, Enjoy, Friend, Happy, Pleasing'}, 
 						css : {color:'#0000FF','font-size':'1em'}, 
 						height : 2
 					}
@@ -113,9 +113,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/BIAT/qual
 					{word : 'Enjoy'}, 
 					{word : 'Friend'},
 					{word : 'Happy'},
-					{word : 'Pleasing'},
-					{word : 'Triumph'},
-					{word : 'Love'},
+					{word : 'Pleasing'}					
 					], 
 				//Stimulus css
 				stimulusCss : {color:'#0000FF','font-size':'2em'}
@@ -128,7 +126,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/BIAT/qual
 					css : {color:'#0000FF','font-size':'1.8em'}, 
 					height : 4,
 					startStimulus : {
-						media : {word : 'Selfish, Hate, Humiliate, Tragic, Disgust, Awful'}, 
+						media : {word : 'Awful, Failure, Gross, Hatred, Rotten, Sadness'}, 
 						css : {color:'#0000FF','font-size':'1em'}, 
 						height : 2
 					}
@@ -139,9 +137,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/BIAT/qual
 					{word : 'Gross'}, 
 					{word : 'Hatred'},
 					{word : 'Rotten'},
-					{word : 'Sadness'},
-					{word : 'Selfish'},
-					{word : 'Tragic'},
+					{word : 'Sadness'}
 					], 
 				//Stimulus css
 				stimulusCss : {color:'#0000FF','font-size':'2em'} 
